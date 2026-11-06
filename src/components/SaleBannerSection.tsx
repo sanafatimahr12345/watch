@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, Sparkles, Clock } from 'lucide-react';
 import { ProductCategory } from '../types';
+import { IMAGES } from '../assets/images';
 
 interface SaleBannerSectionProps {
   onShopSale: (category?: ProductCategory) => void;
@@ -109,7 +110,7 @@ export const SaleBannerSection: React.FC<SaleBannerSectionProps> = ({ onShopSale
             {/* Right Large Headphone Image with Golden Sound Wave Effects */}
             <div className="lg:col-span-6 relative h-72 sm:h-96 lg:h-full min-h-[380px] overflow-hidden">
               <img
-                src="/src/assets/images/sale_banner_headphones_1793957314019.jpg"
+                src={IMAGES.saleBanner}
                 alt="Audiomé Immersive Sound Sale with Golden Wave Effects"
                 className="w-full h-full object-cover object-center transform scale-102 hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"

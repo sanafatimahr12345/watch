@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Truck, ShieldCheck, RotateCcw, ArrowRight, Play, Volume2 } from 'lucide-react';
 import { playAudiophileChime } from '../utils/audioDemo';
+import { IMAGES } from '../assets/images';
 
 interface HeroSectionProps {
   onShopNow: () => void;
@@ -126,7 +127,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onShopNow, onExplorePr
               
               <div className="relative rounded-2xl overflow-hidden bg-[#0A0A0C] border border-[#D6AD65]/25 shadow-2xl shadow-black">
                 <img
-                  src="/src/assets/images/hero_audiome_headphones_1793957312892.jpg"
+                  src={IMAGES.hero}
                   alt="AUDIOMÉ Flagship Reference Headphones"
                   className="w-full h-auto object-cover object-center transform transition-transform duration-700 group-hover:scale-105"
                   referrerPolicy="no-referrer"

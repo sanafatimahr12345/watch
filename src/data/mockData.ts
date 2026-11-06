@@ -1,4 +1,5 @@
 import { Product, EditorialArticle, CategoryNav } from '../types';
+import { IMAGES } from '../assets/images';
 
 export const CATEGORIES: CategoryNav[] = [
   { id: 'headphones', label: 'Headphones', iconName: 'Headphones' },
@@ -20,8 +21,8 @@ export const PRODUCTS: Product[] = [
     originalPrice: 299.99,
     rating: 4.8,
     reviewCount: 320,
-    image: '/src/assets/images/card_premium_headphones_1793957313393.jpg',
-    secondaryImage: '/src/assets/images/hero_audiome_headphones_1793957312892.jpg',
+    image: IMAGES.cardHeadphones,
+    secondaryImage: IMAGES.hero,
     description: 'Reference-grade wireless active noise-canceling headphones engineered with 40mm custom beryllium diaphragms and luxury lambskin cushions.',
     specs: {
       driver: '40mm Custom Beryllium Dynamic',
@@ -55,8 +56,8 @@ export const PRODUCTS: Product[] = [
     originalPrice: 159.99,
     rating: 4.7,
     reviewCount: 512,
-    image: '/src/assets/images/card_wireless_earbuds_1793957313286.jpg',
-    secondaryImage: '/src/assets/images/card_wireless_earbuds_1793957313286.jpg',
+    image: IMAGES.cardEarbuds,
+    secondaryImage: IMAGES.cardEarbuds,
     description: 'Precision in-ear acoustic architecture featuring 11mm graphene drivers, dual environmental noise filters, and a magnetic gold-hinge charging case.',
     specs: {
       driver: '11mm Graphene Dual-Chamber',
@@ -89,8 +90,8 @@ export const PRODUCTS: Product[] = [
     originalPrice: 189.99,
     rating: 4.6,
     reviewCount: 210,
-    image: '/src/assets/images/card_portable_speaker_1793957314118.jpg',
-    secondaryImage: '/src/assets/images/card_portable_speaker_1793957314118.jpg',
+    image: IMAGES.cardSpeaker,
+    secondaryImage: IMAGES.cardSpeaker,
     description: '360-degree omnidirectional acoustic cylinder with brushed gold rotary volume interface, dual opposing bass radiators, and room-filling presence.',
     specs: {
       driver: 'Dual 2.5” Full-Range + 2 Passive Radiators',
@@ -123,8 +124,8 @@ export const PRODUCTS: Product[] = [
     originalPrice: 179.99,
     rating: 4.9,
     reviewCount: 188,
-    image: '/src/assets/images/product_usb_microphone_1793957335323.jpg',
-    secondaryImage: '/src/assets/images/product_usb_microphone_1793957335323.jpg',
+    image: IMAGES.microphone,
+    secondaryImage: IMAGES.microphone,
     description: 'Broadcast-grade 24-bit/192kHz USB condenser studio microphone equipped with gold-sputtered capsule and anti-vibration desktop isolation shockmount.',
     specs: {
       driver: '25mm Gold-Sputtered Condenser',
@@ -157,7 +158,7 @@ export const PRODUCTS: Product[] = [
     originalPrice: 549.99,
     rating: 4.9,
     reviewCount: 94,
-    image: '/src/assets/images/editorial_vacuum_amp_1793957335923.jpg',
+    image: IMAGES.amplifier,
     description: 'Pure Class-A vacuum tube headphone and pre-amplifier crafted with hand-matched 12AX7 triodes for lush, holographic analog warmth.',
     specs: {
       driver: 'Dual 12AX7 + Dual 6SN7 Tubes',
@@ -189,7 +190,7 @@ export const PRODUCTS: Product[] = [
     originalPrice: 449.99,
     rating: 4.9,
     reviewCount: 420,
-    image: '/src/assets/images/hero_audiome_headphones_1793957312892.jpg',
+    image: IMAGES.hero,
     description: 'Open-back planar magnetic flagship tuned for studio mastering and critical audiophile sessions, delivering an expansive concert-hall soundstage.',
     specs: {
       driver: '88mm Ultra-Thin Planar Diaphragm',
@@ -221,7 +222,7 @@ export const PRODUCTS: Product[] = [
     originalPrice: 99.99,
     rating: 4.8,
     reviewCount: 114,
-    image: '/src/assets/images/sale_banner_headphones_1793957314019.jpg',
+    image: IMAGES.saleBanner,
     description: 'Single-crystal oxygen-free copper (OCC) interconnect coated in 24K gold plating, wrapped in custom anti-microphonic braided insulation.',
     specs: {
       driver: '8-Core Braided OCC Copper',
@@ -253,7 +254,7 @@ export const FEATURED_PROMO_CARDS = [
     tagline: 'Noise canceled.',
     subtagline: 'Limitless focus.',
     cta: 'EXPLORE',
-    image: '/src/assets/images/card_premium_headphones_1793957313393.jpg',
+    image: IMAGES.cardHeadphones,
   },
   {
     id: 'card-2',
@@ -262,7 +263,7 @@ export const FEATURED_PROMO_CARDS = [
     tagline: 'Pure freedom.',
     subtagline: 'Powerful sound.',
     cta: 'DISCOVER',
-    image: '/src/assets/images/card_wireless_earbuds_1793957313286.jpg',
+    image: IMAGES.cardEarbuds,
   },
   {
     id: 'card-3',
@@ -271,7 +272,7 @@ export const FEATURED_PROMO_CARDS = [
     tagline: 'Big sound.',
     subtagline: 'Anywhere you go.',
     cta: 'SHOP NOW',
-    image: '/src/assets/images/card_portable_speaker_1793957314118.jpg',
+    image: IMAGES.cardSpeaker,
   },
 ];
 
@@ -282,7 +283,7 @@ export const EDITORIAL_ARTICLES: EditorialArticle[] = [
     title: 'How to Choose the Right Headphones',
     date: 'March 2025',
     readTime: '5 min read',
-    image: '/src/assets/images/hero_audiome_headphones_1793957312892.jpg',
+    image: IMAGES.hero,
     excerpt: 'Open-back vs closed-back, planar magnetic vs dynamic drivers. Navigate the acoustic choices that best match your personal sonic palate.',
     author: 'Julian Vance, Chief Acoustic Engineer',
     content: [
@@ -297,7 +298,7 @@ export const EDITORIAL_ARTICLES: EditorialArticle[] = [
     title: 'Top 5 Wireless Earbuds of 2025',
     date: 'February 2025',
     readTime: '4 min read',
-    image: '/src/assets/images/card_wireless_earbuds_1793957313286.jpg',
+    image: IMAGES.cardEarbuds,
     excerpt: 'We stress-tested over 30 flagship true-wireless earbuds across frequency accuracy, ambient noise suppression, and long-session ergonomic comfort.',
     author: 'Elena Rostova, Senior Audio Editor',
     content: [
@@ -311,7 +312,7 @@ export const EDITORIAL_ARTICLES: EditorialArticle[] = [
     title: 'The Future of High-Fidelity Audio',
     date: 'January 2025',
     readTime: '6 min read',
-    image: '/src/assets/images/editorial_vacuum_amp_1793957335923.jpg',
+    image: IMAGES.amplifier,
     excerpt: 'Analog warmth meets digital precision. Why vacuum tube harmonics and spatial neural rendering are defining the modern audiophile renaissance.',
     author: 'Marcus Sterling, Sound Architect',
     content: [

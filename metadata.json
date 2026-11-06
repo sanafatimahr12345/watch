@@ -1,0 +1,6 @@
+{
+  "name": "AUDIOMÉ - Luxury Audio & Headphones",
+  "description": "Discover high-fidelity audio equipment, studio-grade over-ear headphones, wireless earbuds, and precision sound gear crafted for true audiophiles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

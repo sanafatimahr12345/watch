@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --gold: #D6AD65;
+    --gold-light: #EBD49E;
+    --gold-dark: #B88E45;
+    --bg-dark: #050505;
+    --surface-card: #0D0D0E;
+    --surface-card-hover: #141417;
+  }
+
+  body {
+    background-color: #050505;
+    color: #F4F4F5;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #050505;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #27272A;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #D6AD65;
+  }
+}
+
+.font-serif-luxury {
+  font-family: 'Cinzel', serif;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF0D0 0%, #D6AD65 50%, #B2883A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 25px -5px rgba(214, 173, 101, 0.15);
+}
+
+.gold-button {
+  background: linear-gradient(135deg, #E6C27A 0%, #D6AD65 50%, #BD9246 100%);
+  color: #050505;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gold-button:hover {
+  background: linear-gradient(135deg, #F3D798 0%, #E0B971 50%, #CFA559 100%);
+  box-shadow: 0 4px 20px rgba(214, 173, 101, 0.35);
+  transform: translateY(-1px);
+}
+
